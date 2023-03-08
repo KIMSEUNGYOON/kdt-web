@@ -1,0 +1,41 @@
+body{
+    height:100px;
+}
+
+.box{
+    display:inline-block;
+    width:300px;
+    height:500px;
+    border:1px solid black;
+    box-sizing:border-box;
+}
+.background{
+    /*background:color image reapeat position/size */
+    background-color: aqua;
+    background: palegoldenrod;
+    background: linear-gradient(to bottom,black,tomato);
+
+}
+.background-image{
+    /*back ground-repeat*/
+    background-image: url('./img/small_img.png');
+    background-repeat: repeat; /*defalut*/
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    
+    /*back ground-position*/
+   /* background-position: center;*/
+    background-position: left top;
+    /*background-position: center top;
+    background-position: 10px 10px;*/
+
+    background-size: auto;/*default*/
+    background-size: 150px;
+    background-size: 100px 50px;
+    background-size: cover;
+    background-size: contain;
+
+    background-attachment: scroll;
+    background-attachment: fixed;
+}

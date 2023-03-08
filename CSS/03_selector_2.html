@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            height:70px;
+            background-color: gray;
+        }
+        main section{
+            border:1px solid blue;
+        }
+        
+        header > h2{
+           color:white;
+           text-align:center;
+           line-height:70px;
+        }
+        .first h2{
+            color : white;
+            background-color:navy;
+        }
+        .second > h2{
+            color : aqua;
+            background-color :white;
+        }
+        .second li{
+            font-size:10px;
+            background-color:brown;
+            color:#fff;    
+        }  
+        #kong + li{
+            background-color: aqua;
+        }
+        #kong ~ li{
+            background-color: aliceblue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h2>선택자 배우기</h2>
+    </header>
+    <main>
+        <section class="first">
+            <article>
+                <h2>첫번째 section</h2>
+            </article>
+            <article>
+                <span>전래동화</span>
+            </article>
+            <article>
+                <ul>
+                    <li>토끼와 거북이</li>
+                    <li id="kong">콩쥐팥쥐</li>
+                    <span>test</span>
+                    <li>흥부와 놀부</li>
+                    <li>햇님 달님</li>
+                    <li>은혜 갚은 까치</li>
+                </ul>
+            </article>
+        </section>
+        <section class="second">
+            <h2>두번째 section</h2>
+            <article>
+                <ul>
+                    <li>신데렐라</li>
+                    <li>백설공주</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./4th_prac_insta.css" /> -->
+    <title>instagram 프로필 만들기</title>
+    <style>
+      div {
+        border-radius: 50%;
+      }
+      .insta {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(45deg, #FFE600 10%, #FF0080, #DB20DB);
+      }
+      .insta .white-box {
+        /* 세로 가로 중앙정렬을 위한 속성들입니다.
+  position: absolute; 일 때 top, bottom, right, left 모두 0으로 설정하고
+  margin: auto; 가된다면 부모 요소에 대해서 가로 세로 중앙정렬이 됩니다. */
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 190px;
+        height: 190px;
+        background-color: white;
+      }
+      .insta .white-box .img-box {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 180px;
+        height: 180px;
+        background-image: url('./img/pooh.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="insta">
+      <div class="white-box">
+        <div class="img-box"></div>
+      </div>
+    </div>
+  </body>
+</html>

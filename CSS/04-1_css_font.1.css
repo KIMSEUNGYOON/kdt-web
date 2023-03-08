@@ -1,0 +1,21 @@
+
+.sentences{
+    font-weight: 100;
+    /*text-align:center;
+    text-align:left;
+    text-align:right;*/
+    text-decoration:line-through;
+    text-decoration:underline;
+    line-height:2;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.noonnu_font{
+    @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Serif+KR:wght@300&display=swap');
+
+}
+
+
+

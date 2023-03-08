@@ -1,0 +1,81 @@
+.square{
+    display:inline-block;
+    width: 200px;
+    height:200px;
+    cursor:pointer;
+    border:1px
+    
+}
+
+.border{
+    border:3px solid black;
+    /*defalut : medium none black*/
+    /*border-style:dashed;*/
+    border-color:blue;
+    border-color:red orange yellow green;
+    border-left:5px dotted slateblue; 
+    border-top-style:dashed;
+}
+
+.rounded{
+    background-color: black;
+    border-radius:10px 20px 30px 40px;
+    border-radius:10%;
+    border-radius:50%;/*뒂*/
+    border-radius: 100px;/*원*/
+}
+.rounded2{
+    border-radius: 15px 25px 35px 45px;
+    background-color: rosybrown;
+}
+
+.box-sizing{
+    padding:20px;
+    border: 15px solid red;
+    background-color: orange;
+}
+.content-box{
+    box-sizing:content-box;
+}
+.border-box{
+    box-sizing:border-box;
+}
+
+.d-none{
+    /* display: none; */
+    background-color: red;
+   }
+.invisible {
+    /* visibility: hidden; */
+    background-color: orangered;
+   }
+.opacity-0{
+    /* opacity: 0; */
+    background-color: tomato;
+    opacity:0.5;
+   }
+.abc{
+    border:1px solid;
+    background-color: blue;
+}
+
+.square img[alt="푸"]{
+    width: 200px;
+}
+.overflow-hidden{
+    /*overflow:hidden;*/
+    /*overflow-x:hidden;*/
+}
+.overflow-auto{
+    overflow:auto;
+}
+/*넘치는게 있을때만*/
+
+.overflow-scroll{
+    /*콘텐츠가 넘치지 않아도 스크롤생성*/
+    overflow:scroll;
+}
+.overflow-visible{
+    overflow:visible;
+    overflow:hidden auto;
+}

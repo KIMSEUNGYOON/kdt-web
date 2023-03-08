@@ -1,0 +1,42 @@
+.box{
+    width:900px;
+    height:900px;
+    
+}
+
+.background-image{
+    position:relative;
+    background-image: url("./img/grass.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.circle
+{
+width:70px;
+height:70px;
+border-radius: 50%;
+position: absolute;
+}
+.circle1{
+   z-index:2;
+    top:0px;
+    left:10px;
+    background-color: blue;
+    
+}
+.circle2{
+    top:10px;
+    left:20px;
+    z-index:3;
+    background-color: (rgba(0,0,255,0.6))
+}
+.circle3{
+    margin: 20px;
+}
+.circle4{
+    margin: 220px;
+}
+.circle5{
+    margin: 230px;
+}

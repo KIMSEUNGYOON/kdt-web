@@ -1,0 +1,38 @@
+.parent{
+    width:500px;
+    height:200px;
+    background-color: red;
+}
+.parent .min{
+    min-width: 400px;
+    background-color: orange;
+    height: 100px;
+}
+.parent .max{
+    max-width: 400px;
+    background-color: aqua;
+    height: 100px;
+}
+.box{
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+.box-px{
+ width:50px;
+ height:calc(50vw - 10px);
+}
+.box-view{
+ width:10vw;
+ height:10vh;
+}
+.box-per{
+width:10%;
+height:10%;
+}
+
+.rem{
+    font-size:2rem;
+}
+.em{
+    font-size:2em;
+}
