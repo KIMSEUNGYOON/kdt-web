@@ -145,8 +145,5 @@ console.log(parseInt(n3));
 
 let mathScore = "77";
 let engScore = "88";
-let avgScore =
-  (console.log(typeof Number(mathScore)) +
-    console.log(typeof Number(engScore))) /
-  2;
+let avgScore = (Number(mathScore) + Number(engScore)) / 2;
 console.log(avgScore);

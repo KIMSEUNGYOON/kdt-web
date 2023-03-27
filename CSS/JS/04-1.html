@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div {
+          background-color: black;
+          width: 100%;
+          height: 100px;
+        }
+
+        /* @media screen and (min-width: 576px) {
+          /* 최소 넓이 576px -> 576px이상에서 */
+        /*div {
+            background-color: red;
+            height: 50px;
+          }
+        }*/
+        /*@media screen and (min-width: 768px) {
+          /* 최소 넓이 768px -> 768px이상에서 */
+        /*div {
+            background-color: yellow;
+            height: 50px;
+          }
+        }
+        /*@media screen and (max-width: 576px) {
+          /* 최댜 넓이 576px -> 768px이상에서 */
+        /*div {
+            background-color: yellow;
+            height: 50px;
+          }*/
+
+      /*  @media screen and (max-width: 768px) {
+          /* 최대 넓이 768px -> 768px이상에서 */
+        /*div {
+            background-color: yellow;
+            height: 50px;
+          } */
+
+        @media screen and (orientation: landscape) {
+          div {
+            background-color: red;
+          }
+        }
+        @media print {
+          div {
+            background-color: green;
+          }
+        }
+        .box {
+          display: flex;
+        }
+        .box > div {
+          background-color: green;
+          margin: 20px;
+          color: white;
+        }
+        @media screen and (max-width: 500px) {
+          .box{
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div>a</div>
+      <div>b</div>
+      <div>c</div>
+    </div>
+  </body>
+</html>

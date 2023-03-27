@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+      }
+      .big {
+        display: flex;
+        background-color: blueviolet;
+        color: white;
+        font-size: larger;
+        font-weight: bold;
+        justify-content: flex-end;
+      }
+
+      .small {
+        font-size: small;
+        font-weight: 100;
+      }
+      .menu1 {
+        margin-top: 5px;
+        margin-right: 5px;
+      }
+
+      .menu2 {
+        margin: 5px;
+      }
+      .menu3 {
+        margin: 5px;
+      }
+      .menu4 {
+        margin: 5px;
+      }
+
+      @media screen and (max-width: 992) {
+        .big {
+          display: block;
+        }
+      }
+      @media screen and (max-width: 992) {
+        .small {
+          display: block;
+          background-color: rgb(252, 3, 158);
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="big">
+      LOGO
+      <div class="small menu1">메뉴1</div>
+      <div class="small menu2">메뉴2</div>
+      <div class="small menu3">메뉴3</div>
+      <div class="small menu4">메뉴4</div>
+    </div>
+  </body>
+</html>
