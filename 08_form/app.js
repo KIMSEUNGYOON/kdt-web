@@ -20,12 +20,19 @@ app.get("/", function (req, res) {
 app.get("/getForm", function (req, res) {
   // console.log(req); // { xx: {},  yy: {}, ... query: { id: 'sean', pw: '1234' }}
   console.log(req.query); // { id: 'sean', pw: '1234' }
-  res.send("get 요청 성공!!!");
+  res.render("result", {
+    title: "GET 요청 폼 확인하기",
+    userInfo: req.query,
+  });
 });
 
 app.post("/postForm", function (req, res) {
   console.log(req.body); // { id: 'apple', pw: '1234' }
-  res.send("post 요청 성공!!!");
+  //  res.send("post 요청 성공!!!");
+  res.render("result", {
+    title: "POST 요청 폼 확인하기",
+    userInfo: req.body,
+  });
 });
 
 app.listen(PORT, function () {
