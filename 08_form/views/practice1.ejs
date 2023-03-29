@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/getForm1" method="get" name="username">
+      <label for="name">이름</label>
+      <input type="text" name="name" />
+      <fieldset>
+        <legend>성별</legend>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">남자</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">여자</label>
+      </fieldset>
+      <fieldset>
+        <legend>생년월일</legend>
+        <select name="birth">
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+          <option value="2007">2007</option>
+          <option value="2006">2006</option>
+        </select>
+        <select name="birth">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+
+        <select name="birth">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>관심사</legend>
+        <input type="checkbox" name="hobby" id="travel" value="travel" />
+        <label for="travel">여행</label>
+        <input type="checkbox" name="hobby" id="fashion" value="fashion" />
+        <label for="fashion">패션</label>
+        <input type="checkbox" name="hobby" id="food" value="food" />
+        <label for="food">음식</label>
+      </fieldset>
+      <input type="submit" value="회원가입" />
+    </form>
+  </body>
+</html>
