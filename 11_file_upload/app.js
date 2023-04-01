@@ -62,6 +62,22 @@ app.post("/upload", uploadDetail.single("userfile"), (req, res) => {
   res.send("upload 완료~!!");
 });
 
+//array() 여러 파일을 한번에 업로드 할때 사용
+app.post("/upload/array", uploadDetail.array("userfile"), (req, res) => {
+  console.log(req.files);
+  console.log(req.body);
+  resend("여러개 파일 업로드 완료~~");
+});
+
+app.post(
+  "/upload/fields",
+  uploadDetail.fields([{ name: "userfile1" }, { name: "userfile2" }]),
+  (req, res) => {
+    console.log(req.files);
+    console.log(req.body);
+    res.send("각각 여러개의 파일을 올림");
+  }
+);
 app.listen(PORT, () => {
   console.log(`http://localhost:${PORT}`);
 });
