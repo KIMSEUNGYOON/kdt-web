@@ -11,4 +11,6 @@ router.get("/visitor", controller.getVisitors); // 전체 조회
 // POST /visitor/write
 router.post("/visitor/write", controller.postVisitor); // 하나 추가
 
+//DELETE /visitor/delete
+router.delete("/visitor/delete", controller.deleteVisitor); //하나삭제
 module.exports = router;
