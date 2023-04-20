@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- axios cdn -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/static/css/visitor.css" />
   </head>
 
   <body>
@@ -92,10 +93,11 @@
 
       // (2) [변경] 버튼 클릭시
       // - 데이터 수정 작업
-      function editDo(id) {
+      async function editDo(id) {
         const form = document.forms["visitor-form"];
 
-        axios({
+        // 1. db 수정 요청
+        await axios({
           method: "PATCH",
           url: "/visitor/edit",
           data: {
@@ -116,8 +118,8 @@
           children[2].textContent = form.comment.value;
         });
 
-        //3. input 초기화
-        //todo: input 초기화
+        // 2. input 초기화
+        editCancel();
       }
 
       // [취소] 버튼 클릭시
@@ -126,6 +128,8 @@
       function editCancel() {
         // 1. 인풋 초기화
         const form = document.forms["visitor-form"];
+        console.log(form);
+        console.log(form.name);
         form.name.value = "";
         form.comment.value = "";
 

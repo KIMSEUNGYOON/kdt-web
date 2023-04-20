@@ -93,25 +93,25 @@
       const registerResult = document.querySelector(".register-result");
       const loginResult = document.querySelector(".login-result");
 
-      async function clickRegister() {
-        console.log("click register btn!");
+      // async function clickRegister() {
+      //   console.log("click register btn!");
 
-        const form = document.forms["register"];
-        const formInfo = {
-          username: form.username.value,
-        };
+      //   const form = document.forms["register"];
+      //   const formInfo = {
+      //     username: form.username.value,
+      //   };
 
         // sol1) promise then()
-        // axios({
-        //   url: '/practice1',
-        //   method: 'GET',
-        //   params: formInfo
-        // }).then(function(response) {
-        //   console.log(response)
-        //   console.log(response.data) // { username: 'xxx'}
-        //   registerResult.textContent = `${response.data.username}님 환영합니다! 가입이 완료되었습니다`
-        //   registerResult.classList.add('success')
-        // })
+        axios({
+          url: '/practice1',
+          method: 'GET',
+          params: formInfo
+        }).then(function(response) {
+          console.log(response)
+          console.log(response.data) // { username: 'xxx'}
+          registerResult.textContent = `${response.data.username}님 환영합니다! 가입이 완료되었습니다`
+          registerResult.classList.add('success')
+        })
 
         // sol2) async/await
         const response = await axios({

@@ -7,37 +7,35 @@ app.use("/views", express.static(__dirname + "/views")); // ejs를 담을 views 
 app.use(express.urlencoded({ extended: true })); // post 요청으로 들어오는 모든 형식의 데이터를 파싱(분석)
 app.use(express.json()); // json 형태로 데이터를 주고 받음
 
-// 라우팅(routing): 경로 설정
-// 브라우저에서 어떤 url로 접속했을 때 어떤 페이지를 보여줄 것인가!!!
-
-// localhost:PORT/ 접속했을 때, index.ejs 를 보여주겠다
-
+// Routing (경로 설정)
 app.get("/", function (req, res) {
-  res.render("index", {
-    title: "실습풀이",
-  });
+  res.render("index");
 });
+
 app.get("/practice1", function (req, res) {
-  // views/index.ejs 파일을 찾아서 응답
   res.render("practice1");
 });
 
-app.get("/getForm1", function (req, res) {
-  // console.log(req); // { xx: {},  yy: {}, ... query: { id: 'sean', pw: '1234' }}
-  console.log(req.query); // { id: 'sean', pw: '1234' }
-  res.render("result1", {
+app.get("/practice2", function (req, res) {
+  res.render("practice2");
+});
+
+app.get("/result1", function (req, res) {
+  console.log(req.query);
+  // res.send('get 폼 전송 완료');
+  res.render("result", {
+    title: "실습1 폼 전송 완료!",
     userInfo: req.query,
   });
 });
 
-// app.post("/postForm", function (req, res) {
-//   console.log(req.body); // { id: 'apple', pw: '1234' }
-//   //  res.send("post 요청 성공!!!");
-//   res.render("result", {
-//     title: "POST 요청 폼 확인하기",
-//     userInfo: req.body,
-//   });
-// });
+app.post("/result2", function (req, res) {
+  console.log(req.body);
+  res.render("result", {
+    title: "실습2 폼 전송 완료!",
+    userInfo: req.body,
+  });
+});
 
 app.listen(PORT, function () {
   console.log("웹 서버 실행!!");

@@ -7,11 +7,16 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>실습1 폼 전송완료</h1>
+    <h1><%=title%></h1>
     <ul>
-      <li><span>이름 :<%=userInfo.name%></span></li>
+      <li><span>이름 :<%=userInfo.username%></span></li>
       <li><span>성별 :<%=userInfo.gender%></span></li>
-      <li><span>생일 :<%=userInfo.birth%></span></li>
+      <ul></ul>
+      li>
+      <li>
+        생일 :<%=userInfo.birthYear%> -<%=userInfo.birthMonth%>
+        -<%=userInfo.birthDay%>
+      </li>
       <li><span>취미 :<%=userInfo.hobby%></span></li>
     </ul>
     <a href="/">홈으로 이동</a>

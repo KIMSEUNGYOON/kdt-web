@@ -1,0 +1,51 @@
+.test {
+  text-align: center;
+}
+
+.test h1 {
+  font-size: 2rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 60px;
+  height: 60px;
+  background-color: rgb(245, 231, 210);
+  color: rgb(200, 111, 51);
+}
+.rainbow {
+  display: flex;
+}
+.red {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+.orange {
+  background-color: orange;
+  height: 150px;
+  width: 100px;
+}
+.yellow {
+  background-color: yellow;
+  height: 200px;
+  width: 100px;
+}
+.green {
+  background-color: green;
+  height: 250px;
+  width: 100px;
+}
+.blue {
+  background-color: blue;
+  height: 300px;
+  width: 100px;
+}
+.navy {
+  background-color: navy;
+  height: 350px;
+  width: 100px;
+}
+.purple {
+  background-color: purple;
+  height: 400px;
+  width: 100px;
+}

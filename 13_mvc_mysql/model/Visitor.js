@@ -17,12 +17,12 @@ const conn = mysql.createConnection({
   database: "codingon", // 사용할 데이터베이스 이름
 });
 
-exports.getVisitors = (callback) => {
+exports.getVisitors = function (callback) {
   // conn.query(sql, callback)
   // -> conn 에 저장되어 있는 데이터베이스 접근해서 sql문 실행
   // -> 결과를 callback 함수에 넘겨줌
   const sql = "SELECT * FROM visitor;";
-  conn.query(sql, (err, rows) => {
+  conn.query(sql, function (err, rows) {
     if (err) {
       throw err;
     }
