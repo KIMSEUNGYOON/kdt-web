@@ -1,10 +1,10 @@
 import "./App.css";
-import SyntheticEvent from "./SyntheticEvent";
+import TextChange from "./Handler_ex";
 
 function App() {
   return (
     <div className="App">
-      <SyntheticEvent />
+      <TextChange />
     </div>
   );
 }
