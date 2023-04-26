@@ -1,13 +1,11 @@
-import CssComponent from "./CssComponent";
-import SassComponent from "./SassComponent";
+import Prob4 from './Prob4';
 
 function App() {
-  return (
-    <div className="App">
-      <CssComponent />
-      <SassComponent />
-    </div>
-  );
+    return (
+        <div className="App">
+            <Prob4 />
+        </div>
+    );
 }
 
 export default App;

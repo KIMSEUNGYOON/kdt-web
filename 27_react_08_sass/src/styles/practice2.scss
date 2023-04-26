@@ -1,0 +1,15 @@
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  &.circle1 {
+    background-color: pink;
+  }
+  &.circle2 {
+    background-color: yellow;
+  }
+  &.circle3 {
+    background-color: green;
+  }
+}
+@mixin;
